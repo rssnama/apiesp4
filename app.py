@@ -4,7 +4,6 @@ import pytesseract
 from PIL import Image
 from flask import Flask, request, render_template, redirect,jsonify
 import numpy as np
-import os
 import urllib.request
 #from firebase_admin import credentials, firestore, initialize_app
 
@@ -83,6 +82,6 @@ def upload_image():
 
 
 
-port = int(os.environ.get('PORT', 8080))
+
 if __name__ == '__main__':
     app.run(debug=False, port=2000)
